@@ -4,8 +4,7 @@ import Contact from './component/contact'
 import Project from './component/project'
 import About from './component/about'
 import Skill from './component/skill'
-import { FaViacoin } from 'react-icons/fa'
-import { Head } from 'next/document'
+
 
 const page = () => {
   return (
