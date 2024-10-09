@@ -15,7 +15,7 @@ const Project = () => {
               Projects
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              "My projects showcase a blend of creativity and functionality.
+              My projects showcase a blend of creativity and functionality.
               <strong>The Digital Clock</strong> is a sleek, responsive
               timepiece with a modern design and smooth animations.
               <strong>Guess the Number</strong> is a fun, interactive game that
@@ -25,7 +25,7 @@ const Project = () => {
               bold yellow and black theme, designed to promote gym services and
               engage users with interactive forms and cool social media icons.
               Each project highlights my ability to merge aesthetics with coding
-              skills, making them both user-friendly and visually appealing."
+              skills, making them both user-friendly and visually appealing.
             </p>
           </div>
           <div className="flex flex-wrap -m-4">
@@ -45,11 +45,11 @@ const Project = () => {
                     Digital Clock
                   </h1>
                   <p className="leading-relaxed line-clamp-2">
-                    <strong> "My Digital Clock </strong>is a sleek, animated
+                    <strong> My Digital Clock </strong>is a sleek, animated
                     web-based clock with a modern black and blue gradient
                     background. Featuring bold, easy-to-read numbers and smooth
                     real-time updates, it adds a touch of style and
-                    functionality to any screen."
+                    functionality to any screen.
                   </p>
                   <Link
                     href={"https://digitalclockshaheernaeem.netlify.app/"}
