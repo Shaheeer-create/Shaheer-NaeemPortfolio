@@ -4,6 +4,7 @@ import React from "react";
 import DigitalClock from "../../../public/assests/projects/Digital Clock.jpg";
 import GuessTheNumber from "../../../public/assests/projects/GuessTheNumber.jpg";
 import WrecksAndBuildsGym from "../../../public/assests/projects/WrecksAndBuildsGym.jpg";
+import ShaheerNaeemShops from "../../../public/assests/projects/ShaheerNaeemShop.jpg";
 
 const Project = () => {
   return (
@@ -131,6 +132,37 @@ const Project = () => {
                 </div>
               </div>
             </div>
+            {/* Project 4 */}
+            <div className="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer">
+              <div className="flex relative">
+                <Image
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src={ShaheerNaeemShops}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">
+                    Shaheer-Naeem-Shop Projects
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-white mb-3">
+                    Shaheer Naeem Shop
+                  </h1>
+                  <p className="leading-relaxed line-clamp-2">
+                    <strong>Shaheer Naeem Shop</strong> is a dynamic, Modern Ecommerce  website
+                     And Its A Pixel Perfect Design From Figma designed to promote  Ecommerce Projects
+                  </p>
+                  <Link
+                    href={"https://shaheer-naeem-shop.vercel.app/"}
+                    target="_blank"
+                  >
+                    <p className="leading-relaxed text-indigo-400  hover:underline">
+                      View Project
+                    </p>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
