@@ -16,7 +16,7 @@ const Footer = () => {
       <span className="ml-3 text-xl">Shaheer Naeem</span>
     </a>
     <p className="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
-      © 2020 Shaheer Naeem —
+      © 2024 Shaheer Naeem —
     
     </p>
     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">

@@ -46,6 +46,8 @@ const Contact = () => {
       <p className="leading-relaxed mb-5">
 Feel Free To Contact Us
       </p>
+      <form  action="https://formspree.io/f/xvgogdvq"
+  method="POST">
       <div className="relative mb-4">
         <label htmlFor="name" className="leading-7 text-sm text-gray-400">
           Name
@@ -55,6 +57,7 @@ Feel Free To Contact Us
           id="name"
           name="name"
           className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+        required
         />
       </div>
       <div className="relative mb-4">
@@ -66,7 +69,20 @@ Feel Free To Contact Us
           id="email"
           name="email"
           className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+       required 
         />
+      </div>
+      <div className="relative mb-4">
+        <label htmlFor="subject" className="leading-7 text-sm text-gray-400">
+          Subject
+        </label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+       required
+       />
       </div>
       <div className="relative mb-4">
         <label htmlFor="message" className="leading-7 text-sm text-gray-400">
@@ -77,12 +93,13 @@ Feel Free To Contact Us
           name="message"
           className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
           defaultValue={""}
+        required
         />
       </div>
       <button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
         Send Message
       </button>
-     
+      </form>
     </div>
   </div>
 </section>
