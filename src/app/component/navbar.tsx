@@ -3,6 +3,16 @@ import Link from "next/link";
 import React from "react";
 import logo from "../../../public/assests/image/logo.jpg";
 import { FaCloudDownloadAlt } from "react-icons/fa";
+
+import { Menu } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  
+  SheetTrigger,
+} from "@/components/ui/sheet"
+
+
 // import pdf from "../../../public/assests/cv/Shaheer_Naeem_CV.pdf"
 // import Shaheer_Naeem_CV.pdf from "../../../public/assests/cv/Shaheer_Naeem_CV.pdf";
 
@@ -18,11 +28,11 @@ const Navbar = () => {
             <span className="ml-3 text-xl">Shaheer Naeem</span>
           </a>
           <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <Link href={"/"} className="mr-5 hover:text-blue-600">Home</Link>
-            <Link href={"#about"} className="mr-5 hover:text-blue-600">About</Link>
-            <Link href={"#skills"} className="mr-5 hover:text-blue-600">Skills</Link>
-            <Link href={"#Project"} className="mr-5 hover:text-blue-600">Projects</Link>
-            <Link href={"#Contact"} className="mr-5 hover:text-blue-600">Contacts</Link>
+            <Link href={"/"} className="mr-5 hover:text-white hidden md:block">Home</Link>
+            <Link href={"#about"} className="mr-5 hover:text-white hidden md:block">About</Link>
+            <Link href={"#skills"} className="mr-5 hover:text-white hidden md:block">Skills</Link>
+            <Link href={"#Project"} className="mr-5 hover:text-white hidden md:block">Projects</Link>
+            <Link href={"#Contact"} className="mr-5 hover:text-white hidden md:block">Contacts</Link>
           </nav>
           <Link target="_blank" href={"/assests/cv/MyCv.pdf"}>
 
@@ -31,6 +41,22 @@ const Navbar = () => {
     <FaCloudDownloadAlt className="ml-2 text-xl" />
   </button>
 </Link>
+<Sheet>
+  <SheetTrigger className="md:hidden">
+  <Menu />
+  </SheetTrigger>
+  <SheetContent>
+  <nav className="md:ml-auto md:mr-auto flex flex-col">
+
+  <Link href={"/"} className="mb-2 text-customSimple hover:text-hovercolor md:hidden">Home</Link>
+  <Link href={"#about"} className="mb-2 text-customSimple hover:text-hovercolor md:hidden">About</Link>
+  <Link href={"#skills"} className="mb-2 text-customSimple hover:text-hovercolor md:hidden">Skills</Link>
+  <Link href={"#Project"} className="mb-2 text-customSimple hover:text-hovercolor md:hidden">Projects</Link>
+  <Link href={"#Contact"} className="mb-2 text-customSimple hover:text-hovercolor md:hidden">Contacts</Link>
+</nav>
+
+  </SheetContent>
+</Sheet>
 
 
 
